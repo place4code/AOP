@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-@Order(2)
-public class MyDemoLoggingAspect {
-	
+@Order(3)
+public class MyApiAnalyticsAspect {
+		
 	@Before("com.place4code.aopdemo.aspect.AopAspects.withoutSettersGetter()")
 	public void noSetterGetter() {
-		System.out.println("\n-> My Logging <- \n");
+		System.out.println("\n-> no My Analytics <-\n");
 	}
-	
+		
 }
