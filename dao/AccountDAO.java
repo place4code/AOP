@@ -1,5 +1,8 @@
 package com.place4code.aopdemo.dao;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import com.place4code.aopdemo.Account;
@@ -33,6 +36,17 @@ public class AccountDAO {
 	public void setName(String name) {
 		System.out.println("setName()");
 		this.name = name;
+	}
+	
+	//add a new method: findAccounts
+	public List<Account> findAccounts() {
+		
+		//create and return sample accounts
+		return Arrays.asList(
+				new Account("Account 1", "Level 1"),
+				new Account("Account 2", "Level 2"),
+				new Account("Account 3", "Level 3")
+				);
 	}
 	
 }

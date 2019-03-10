@@ -12,7 +12,7 @@ public class MyApiAnalyticsAspect {
 		
 	@Before("com.place4code.aopdemo.aspect.AopAspects.withoutSettersGetter()")
 	public void noSetterGetter() {
-		System.out.println("\n-> no My Analytics <-\n");
+		System.out.println("\n-> @Before My Analytics <-\n");
 	}
 		
 }

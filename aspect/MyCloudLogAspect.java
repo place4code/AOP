@@ -12,7 +12,7 @@ public class MyCloudLogAspect {
 
 	@Before("com.place4code.aopdemo.aspect.AopAspects.withoutSettersGetter()")
 	public void noSetterGetter() {
-		System.out.println("\n-> My Cloud <-\n");
+		System.out.println("\n-> @Before My Cloud <-\n");
 	}
 		
 }
